@@ -7,6 +7,9 @@ snippet #!
 	#!/usr/bin/env ruby
 	# encoding: utf-8
 
+snippet utf8
+	# encoding: utf-8
+
 # New Block
 snippet =b
 	=begin rdoc
@@ -21,9 +24,10 @@ snippet beg
 		${3}
 	rescue ${1:Exception} => ${2:e}
 	end
-
+snippet pry
+	require 'pry'; binding.pry
 snippet req
-	require "${1}"${2}
+	require '${1}'${2}
 snippet #
 	# =>
 snippet end
